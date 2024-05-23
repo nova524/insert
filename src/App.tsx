@@ -1,12 +1,23 @@
-import "./App.css";
+import { Link, BrowserRouter, Route, Routes } from "react-router-dom";
+import Index from "./pages/index"
+import About from "./pages/about"
 
 function App() {
   return (
-    <div className="container">
-      <h1>hello</h1>
-      <h2>sub title</h2>
-      <h3>한국어</h3>
-    </div>
+  <>
+    <BrowserRouter>
+      <header>
+        <Link to="/">home</Link>
+        <Link to="/about">about</Link>
+      </header>
+      <main>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
+  </>
   );
 }
 
