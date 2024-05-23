@@ -10,7 +10,9 @@ function App() {
       <header>
         <Link to="/">home</Link>
         <Link to="/about">about</Link>
+        <p>login</p>
       </header>
+      <hr></hr>
       <main>
         <Routes>
           <Route path="/" element={<Index />} />
