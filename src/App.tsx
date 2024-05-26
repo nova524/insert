@@ -6,10 +6,10 @@ function App() {
     return (
         <>
             <Header />
-            <hr />
             <main>
                 <h1>insert</h1>
             </main>
+            <hr />
             <Footer />
         </>
     );
