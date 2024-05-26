@@ -1,7 +1,7 @@
-function About() {{
+function Create() {{
     return (
         <>
-            <h1>about</h1>
+            <h1>Create</h1>
             <ul>
                 <li>image upload</li>
                 <li>post article</li>
@@ -11,4 +11,4 @@ function About() {{
     )
 }}
 
-export default About
+export default Create
